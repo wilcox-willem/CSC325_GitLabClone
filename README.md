@@ -5,7 +5,9 @@ This contains my work for ==Dr. Munday's CSC325 App Dev/Dep course==.
 Course work will be uploaded here through out, the main branch will contain all final material.
 
 ## Authors and acknowledgment
-Willem Wilcox - MU 2024
+- [x] Willem Wilcox - MU 2024
+- [x] My cat sitting on my keyboard
+- [ ] My rubber duck
 
 ## License
 *** For Educational Purposes Only ***
