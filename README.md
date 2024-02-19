@@ -1,5 +1,5 @@
 ## CSC325 - Will Wilcox's Work
-This contains my work for Dr. Munday's CSC325 App Dev/Dep course.
+This contains my work for ==Dr. Munday's CSC325 App Dev/Dep course==.
 
 ## Description
 Course work will be uploaded here through out, the main branch will contain all final material.
@@ -8,9 +8,9 @@ Course work will be uploaded here through out, the main branch will contain all 
 Willem Wilcox - MU 2024
 
 ## License
-For Educational Purposes Only
+*** For Educational Purposes Only ***
 
 ## Project status
-Currently, items of importance
-    - [ ] flutter_docker_app : pertains to "Develop Standard Developer Environment" assignment
-    - [ ] this GIT page! : pertains to "Source Control for Flutter Project"
+- **Currently, items of importance**
+- *flutter_docker_app* : pertains to "*** Develop Standard Developer Environment ***" assignment
+- *this GIT page!* : pertains to "*** Source Control for Flutter Project ***" assignment
