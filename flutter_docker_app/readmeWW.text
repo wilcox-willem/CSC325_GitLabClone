@@ -1,0 +1,106 @@
+# WW: GOD BLESS THIS ARTICLE https://medium.com/@codemax120/flutter-web-with-docker-06cee1839adb
+# WW: I was getting like 80% of the docker/flutter to work on my local machine
+# WW: But after 8+ hours of my only day off, I found that article and it just works
+# WW: I have made my own tweaks to the flutter app, but I am afraid to tweak the docker stuff
+
+Here is my journey so far,
+
+I followed along in class, and was able to build a variety of docker containers
+
+> Me: docker is pretty sick, can't wait to explore this!
+>     time to go and setup flutter!
+
+I get home, setup my desktop and begin installing vscode extensions for
+    -flutter
+    -dart
+    -remote dev (which includes stuff for dev containers)
+
+I begin by using ctrl+shift+p in vscode to get the command pallete, then I use
+"Flutter: New Project" > Application > name the project and pick where to save.
+
+After that, I used flutter cli to run the app in my browser, went smoothly
+
+After that success, I opened the "main.dart" file and began making small tweaks to get
+a better understanding of dart. It was fun, the most fun I had up to this point. Pretty
+colors and buttons ooga booga, right?
+
+
+Then the Dark Souls esque journey of pain and massichism started...
+
+> Me: docker is pretty s***, can't wait to avoid this!
+>     time to go and give up!
+
+I had hours of failure after failure, I couldn't get any results to work consistently.
+I tried different methods for setting up my container with flutter, and I would have the
+working app and flutter sdk verified, then try to build/run again, error after error.
+
+Eventually, I landed on the article I mentioned above, and it worked. Finally things
+are making sense and starting to click
+
+The sequence of steps is very important, and I hope to practice more with different
+types of applications to learn more about configuring and working with docker/flutter.
+
+> Me: docker is pretty slick, can't wait to enjoy this!
+>     time to go and read up!
+
+Honestly, this has been one of the most annoying assignments I have done in a while
+BUT that is not a bad thing. Having so many road blocks and issues forced me to get
+more comfortable with Docker/Flutter (and even VS Code) and I am walking away better
+than how I started. I am excited to get better at using these tools as well. Once I
+was able to make significant progress, all the stress was worthwhile
+
+-----------------------------------------------------------------------------------
+How to run a flutter web app in a docker container
+
+You will need:
+    - Docker
+    - VS Code
+        * with extensions
+        - remote dev
+        - docker
+        - flutter
+    - Git
+        * here is my master git repo with everything entailed
+        - 
+    - time and patience
+
+First, ensure all "needs" are installed and up to date (& correct pathing)
+(if cloning from master git, skip to ~run container~)
+
+Open VS Code and use the command pallete (ctrl+shift+p) to search for
+    - "Flutter: New Project"
+    - select "Application"
+    - name your flutter project (Ex: flutter_docker_app)
+
+Within the flutter project folder, create a "Dockerfile"
+    - For a premade Dockerfile, reference the article below
+    - https://medium.com/@codemax120/flutter-web-with-docker-06cee1839adb
+    - this guide is centered around this article, saving grace ^^^
+    ~
+    - otherwise, make/edit the Dockerfile at your own risk
+    - https://docs.docker.com/engine/reference/builder/    
+
+Also within the flutter project folder, create a "server" folder/directory
+
+Within the "server" folder/directory, create a "server.sh" script
+    - This script is designed to prep a port for the web app
+    - It can also be found at the following article
+    - https://medium.com/@codemax120/flutter-web-with-docker-06cee1839adb
+    - this script is tailored to the premade Dockerfile ^^^
+
+Now, it is time to build the image we will be using for our container
+In terminal while in the flutter project folder, use the following command
+    - docker build . -t flutter_docker_img
+This will take a while, and can sometimes crash if slow internet
+
+    ~~~ run container ~~~
+
+Once the image is built, it is time to run it! use the following command
+    - docker run -i -p 8080:9000 -td flutter_docker
+
+Now, if everything has gone correctly, open a browser and go to
+    - http://localhost:8080/
+
+You should see a flutter app!
+
+
