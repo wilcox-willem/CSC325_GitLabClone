@@ -16,3 +16,4 @@ Course work will be uploaded here through out, the main branch will contain all 
 - *Current items of importance*
 - ***flutter_docker_app*** : pertains to **"Develop Standard Developer Environment"** assignment
 - ***this GIT page!*** : pertains to **"Source Control for Flutter Project"** assignment
+- ***Flutter Side Projects*** : pertains to **"Source Control for Flutter Project"** assignment, and personal developement
