@@ -1,6 +1,6 @@
 # flutter_docker_app
 
-A new Flutter project. Check out "readmeWW.txt"
+A new Flutter project. Check out *"DevContainer.md"* and *"readmeWW.txt"*
 
 
 -----------------------------------------------------------------------------------
