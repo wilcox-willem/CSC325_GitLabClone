@@ -24,7 +24,9 @@
     - Flutter Developement
 * **Using VS Code to Make DevContainer**
     - Using the command pallete (ctrl+shift+p on Windows) use the following
-        > Dev Containers: Add Dev Container Configuration File...
+        
+        ``Dev Containers: Add Dev Container Configuration File...``
+        
     - This will start the GUI/guided process for setting up a dev container. This is how I started and laid the foundation for my DockerFile and configurations. 
 #### DockerFile
 
